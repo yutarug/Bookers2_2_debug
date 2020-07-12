@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   resources :users,only: [:show,:edit,:update,:index] do
     member do
-      get 'followers'=> "users/followers#followers"
-      get 'followings'=> "users/followings#followigs"
+      get 'followers'=> "users#followers"
+      get 'followings'=> "users#followings"
     end
   end
   
